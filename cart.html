@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Site</title>
+
+    <!-- Font awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <!-- Css Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- nav bar codes starts here -->
+    <i class="fa-solid fa-bars fa-2x" id="menu_icon"></i>
+    <nav id="menu" class="hidden">
+        <ul class="nav_title">
+            <li class="nav_title_list">
+                <a href="index.html" class="nav_title_link">
+                    E-commerce Express
+                </a>
+            </li>
+        </ul>
+        <ul class="nav_bar">
+            <li class="nav_list">
+                <a href="index.html" class="nav_link">Home</a>
+            </li>
+            <li class="nav_list">
+                <a href="login.html" class="nav_link">Login</a>
+            </li>
+            <li class="nav_list">
+                <a href="index.html" class="nav_link">Log Out</a>
+            </li>
+            <li class="nav_list">
+                <a href="contact.html" class="nav_link">Contact</a>
+            </li>
+        </ul>
+        <ul class="nav_cart">
+            <li class="nav_cart_list">
+                <a href="cart.html" class="nav_cart_link">
+                    <span>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Cart 2 Products-400tk
+                    </span>
+                </a>
+            </li>
+            <li class="nav_cart_list">
+                <a href="profile.html" class="nav_link">
+                    <img src="/images/user.jpg" alt="user" class="user_img">
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- nav bar codes ends here -->
+
+
+
+    <main>
+        <div class="cart_area flex-center">
+            <div class="cart_items">
+                <div class="cart_item_heading card">
+                    <h2>Shopping Cart [2 items]</h2>
+                    <div class="cart_item_action">
+                        <label for="select">
+                            <input type="checkbox" name="select" id="select">
+                            Select all items
+                        </label>
+                        <button class="btn">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                        <button class="btn">Shop More</button>   
+                    </div>
+                </div>
+                <div class="cart_item card">
+                    <input type="checkbox">
+                    <img src="images/product1.jpg" alt="product1" class="cart_item_img">
+                    <div class="cart_item_description">
+                        <h3 class="product_name">Smart Watch haylou</h3>
+                        <h4 class="product_price">Price: $220.89</h4>
+                        <p class="cart_item_shipping">Free Shipping</p>
+                    </div>
+
+                    <div class="cart_btn_action">
+                        <button class="btn">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                        <div class="cart_item_btn">
+                            <button class="btn">
+                                <i class="fas fa-add"></i>
+                            </button>
+                            <span>3</span>
+                            <button class="btn">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="cart_item card">
+                    <input type="checkbox">
+                    <img src="images/product2.jpg" alt="product2" class="cart_item_img">
+                    <div class="cart_item_description">
+                        <h3 class="product_name">Smart Watch haylou</h3>
+                        <h4 class="product_price">Price: $120.89</h4>
+                        <p class="cart_item_shipping">Shipping Cost: $2.50</p>
+                    </div>
+
+                    <div class="cart_btn_action">
+                        <button class="btn">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                        <div class="cart_item_btn">
+                            <button class="btn">
+                                <i class="fas fa-add"></i>
+                            </button>
+                            <span>3</span>
+                            <button class="btn">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="cart_payment">
+                <div class="cart_payment_summary card">
+                    <h2>Payment Summary</h2>
+                    <div>
+                        <p>Subtotal:</p>
+                        <p>$343.44</p>
+                    </div>
+                    <div>
+                        <p>Shipping Cart:</p>
+                        <p>$2.50</p>
+                    </div>
+                    <div>
+                        <p>Total Cost:</p>
+                        <p>$344.48</p>
+                    </div>
+                    <button class="btn cart_payment_btn">Pay Now</button>
+                </div>
+                <div class="cart_payment_methods card">
+                    <h2>Payment Methods</h2>
+                    <div>
+                        <i class="fa-brands fa-cc-visa fa-2x"></i>
+                        <i class="fa-brands fa-cc-apple-pay fa-2x"></i>
+                        <i class="fa-brands fa-cc-amex fa-2x"></i>
+                        <i class="fa-brands fa-cc-amazon-pay fa-2x"></i>
+                        <i class="fa-brands fa-cc-paypal fa-2x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- footer codes starts here -->
+
+    <footer class="footer flex-space-evenly">
+        <div class="footer_left flex-space-evenly">
+            <a href="index.html" class="nav_title_link">
+                E-commerce Express
+            </a>
+            <label for="subscribe">Subscribe: </label>
+            <input type="email" id="subscribe" name="subscribe" placeholder="Enter Your email..." class="footer_input">
+            <button class="btn footer_btn">Subscribe</button>
+        </div>
+
+        <div class="footer_right">
+            <p>&copy Copyright 2023 By Yousuf Hassan. All rights reserved.</p>
+        </div>
+
+
+
+
+    </footer>
+
+
+    <!-- footer codes ends here -->
+
+    <script src="/script.js"></script>
+</body>
+</html>
